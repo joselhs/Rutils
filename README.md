@@ -1,7 +1,7 @@
 # Rutils
 Here I place different functions I created using R language to solve business problem that we had at work.
 
-## ci_plot_smooth
+## ci_plot_smooth v1.0
 This function permits to plot _i_ data series smoothly with their confidence intervals by aproximating the original line with splines.
 
 ### Use
