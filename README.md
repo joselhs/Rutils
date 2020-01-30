@@ -47,3 +47,4 @@ ci_plot_smooth(datatest,
          ylab = "Valor", 
          legend = F)
 ```
+![smooth curves](https://github.com/joselhs/Rutils/blob/master/images/smoothing.png?raw=true)
