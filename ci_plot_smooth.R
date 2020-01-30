@@ -2,26 +2,6 @@
 # Autor: Jose L Holgado Sánchez y Cristina Lopez Zumel  #
 # Fecha: 28/01/2020                                     #
 #########################################################
-
-# Descripción de la función:
-# Esta función hace un plot de i series de valores y sus intervalos de confianza
-
-# - data: debe ser un dataframe múltiplo de 3, donde la primera columna será la serie de valores,
-#   la segunda el intervalo inferior y la tercera el superior, y así sucesivamente.
-# - labels: etiquetas del eje X (por ejemplo, 20 - 25, 25 - 30, etc). 
-#   Si no se especifica será de 1 a N.
-# - ylim: c(a,b) con los limites del eje Y
-# - sequence_y: seq(from=a,to=b,by=c) con la secuencia/separacion que quieres que lleve el eje y
-# - colours: vector  con colores. Hay que especificar tantos colores como series. 
-#   Si no se especifica se escogen colores aleatoriamente.
-# - xlab: label del eje x
-# - ylab: label del eje y
-# - main: Titulo del plot
-# - legend: TRUE si queremos que haya leyenda. 
-#   En caso de especificar TRUE se pueden especificar también los campos legendpos y legendlabs.
-# - legendpos: posicion de la leyenda. Puede ser "topright", "topleft", "bottomright", "bottomleft"
-# - legendlabels: labels para la leyenda.
-# - trueLine: TRUE si queremos pintar la línea sin smooth (para comparar)
  
 ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA, xlab=NA, ylab=NA, main=NA, legend=F, legendpos="topleft", legendlabs=NA, trueLine = F){
 
