@@ -1,7 +1,7 @@
-#########################################################
-# Autor: Jose L Holgado Sánchez y Cristina Lopez Zumel  #
-# Fecha: 28/01/2020                                     #
-#########################################################
+###########################################################
+# Authors: Jose L Holgado Sánchez y Cristina Lopez Zumel  #
+# Date: 28/01/2020                                        #
+###########################################################
  
 ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA, xlab=NA, ylab=NA, main=NA, legend=F, legendpos="topleft", legendlabs=NA, trueLine = F){
 
