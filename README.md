@@ -1,4 +1,4 @@
-# Rutils
+# RUtils
 Here I place different functions I created using R language to solve business problem that we had at work.
 
 ## ci_plot_smooth v1.0
