@@ -19,7 +19,7 @@ This function permits to plot _i_ data series smoothly with their confidence int
   - trueLine: TRUE if we want to print the original serie to compare with the smooth curve.
   
 ### Examples
-`
+```
 datatest <- data.frame(women = c(3.1, 3.6, 4.6, 5.4, 6.1, 7.0, 7.5, 6.7),
                        womenLW = c(2.9, 3.5, 4.6, 5.4, 6.0, 7.0, 7.4, 6.5),
                        womenUP = c(3.2, 3.7, 4.7, 5.5, 6.2, 7.1, 7.5, 6.9),
@@ -41,4 +41,4 @@ ci_plot_smooth(datatest,
          trueLine = F)
     
 ci_plot_smooth(datatest, main = "CI Plot", xlab = "Grupos", y_lim = c(0.6, 10), ylab = "Valor", legend = F)
-`
+```
