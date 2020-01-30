@@ -41,7 +41,6 @@ ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA,
     fitsup <- smooth.spline(lsup ~ x,df = length(x))
     yysup <- predict(fitsup, x = data.frame(x=xxsup))
    
-    
     # Obtenemos el color y lo convertimos a RGB
     colour <- colours[j]
     rgbcol <- rgb(col2rgb(colour)[1]/255, 
@@ -49,8 +48,8 @@ ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA,
                   col2rgb(colour)[3]/255, 0.3)
     # actualizamos color
     j <- j+1
+   
     if(i == 1){
-
       if(all(is.na(y_lim))){
         ylim <- c((minval-0.1), (maxval+0.1))
       }else{
@@ -88,6 +87,7 @@ ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA,
   }else{
     axis(1, at=1:(nrow(data)+1), labels=c(1:(nrow(data)+1)))
   }
+ 
   # En el eje Y se eliminan los labels originales y se sustituyen por los labels rotados
   if(all(is.na(sequence_y))){
     axis(2, las = 2)
@@ -95,10 +95,8 @@ ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA,
     axis(2, las = 2, at=sequence_y)
   }
   
-
   # Añadimos leyenda
   if(legend == T){
-    
     if(all(is.na(legendlabs))){
       # Si se ha especificado que haya leyenda pero no se ha especificado labels
       # estos labels serán números de 1 a n/3 (número de series)
@@ -111,6 +109,5 @@ ci_plot_smooth <- function(data, labels=NA, y_lim=NA, sequence_y=NA, colours=NA,
            lty = rep(1, ncol(data)),
            box.lty = 0,
            cex = 1)
-  }
-  
+  } 
 }
