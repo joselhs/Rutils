@@ -1,6 +1,6 @@
 #########################################################
 # Autor: Jose L Holgado Sánchez y Cristina Lopez Zumel  #
-# Fecha: 28/01/2019                                     #
+# Fecha: 28/01/2020                                     #
 #########################################################
 
 # Descripción de la función:
