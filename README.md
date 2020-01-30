@@ -40,5 +40,10 @@ ci_plot_smooth(datatest,
          colours = c("orange", "steelblue", "darkgreen"),
          trueLine = F)
     
-ci_plot_smooth(datatest, main = "CI Plot", xlab = "Grupos", y_lim = c(0.6, 10), ylab = "Valor", legend = F)
+ci_plot_smooth(datatest, 
+         main = "CI Plot", 
+         xlab = "Grupos", 
+         y_lim = c(0.6, 10), 
+         ylab = "Valor", 
+         legend = F)
 ```
